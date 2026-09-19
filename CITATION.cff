@@ -1,29 +1,25 @@
-CITATION.cff
 cff-version: 1.2.0
-message: "If you use these results, please cite the source dataset and Chemprop paper in addition to this software."
-title: "Comparative Machine Learning and Graph Neural Network Approaches for Blood–Brain Barrier Permeability Prediction"
-type: software
-license: MIT
-date-released: 2026-09-18
-keywords:
-  - blood-brain barrier
-  - permeability prediction
-  - molecular machine learning
-  - random forest
-  - graph neural network
-  - chemprop
-  - scaffold split
-  - drug discovery
+message: "If you use these results or code, please cite as below."
 authors:
-  - family-names: Hatwar
-    given-names: Devarshi
-    orcid: "0009-0000-0000-0000"  # [REPLACE WITH YOUR ORCID]
-repository-code: "[GITHUB URL TO BE ADDED]"
+  - family-names: "Hatwar"
+    given-names: "Devarshi"
+    orcid: "0009-0003-6639-7709"
+title: "AI-Based Blood-Brain Barrier Permeability Prediction"
+type: "software"
+version: "v1.0.0"
+date-released: "2026-09-19"
+license: "MIT"
+repository-code: "https://github.com/devarshihatwar/bbb-permeability-prediction"
+identifiers:
+  - type: "github"
+    value: "devarshihatwar/bbb-permeability-prediction"
 preferred-citation:
-  type: software
-  title: "BBB Prediction Project: Comparative ML and GNN Approaches for Blood-Brain Barrier Permeability"
+  type: "software"
+  title: "AI-Based Blood-Brain Barrier Permeability Prediction"
   author:
-    - family-names: Hatwar
-      given-names: Devarshi
+    - family-names: "Hatwar"
+      given-names: "Devarshi"
+      orcid: "0009-0003-6639-7709"
   year: 2026
-  license: MIT
+  license: "MIT"
+  url: "https://github.com/devarshihatwar/bbb-permeability-prediction"
