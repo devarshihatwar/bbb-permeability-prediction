@@ -1,0 +1,171 @@
+2026-09-15T12:33:55 - INFO:chemprop.cli.main - Running in mode 'train' with args: {'smiles_columns': None, 'reaction_columns': None, 'no_header_row': False, 'num_workers': 0, 'batch_size': 16, 'accelerator': 'auto', 'devices': 'auto', 'rxn_mode': 'REAC_DIFF', 'multi_hot_atom_featurizer_mode': 'V2', 'keep_h': False, 'add_h': False, 'ignore_stereo': False, 'reorder_atoms': False, 'molecule_featurizers': None, 'descriptors_path': None, 'descriptors_columns': None, 'no_descriptor_scaling': False, 'no_atom_feature_scaling': False, 'no_atom_descriptor_scaling': False, 'no_bond_feature_scaling': False, 'no_bond_descriptor_scaling': False, 'atom_features_path': None, 'atom_descriptors_path': None, 'bond_features_path': None, 'bond_descriptors_path': None, 'constraints_path': None, 'constraints_to_targets': None, 'use_cuikmolmaker_featurization': False, 'config_path': None, 'data_path': [WindowsPath('data/chemprop_h2h.csv')], 'output_dir': WindowsPath('results/chemprop_h2h'), 'remove_checkpoints': False, 'checkpoint': None, 'freeze_encoder': False, 'model_frzn': None, 'frzn_ffn_layers': 0, 'from_foundation': None, 'ensemble_size': 1, 'message_hidden_dim': [300], 'message_bias': False, 'depth': [4], 'undirected': False, 'dropout': 0.0, 'mpn_shared': False, 'aggregation': 'norm', 'aggregation_norm': 100, 'atom_messages': False, 'activation': 'RELU', 'activation_args': None, 'ffn_hidden_dim': [200], 'ffn_num_layers': 2, 'batch_norm': False, 'multiclass_num_classes': 3, 'atom_task_weights': None, 'atom_ffn_hidden_dim': [300], 'atom_ffn_num_layers': 1, 'atom_multiclass_num_classes': 3, 'bond_task_weights': None, 'bond_ffn_hidden_dim': [300], 'bond_ffn_num_layers': 1, 'bond_multiclass_num_classes': 3, 'atom_constrainer_ffn_hidden_dim': [300], 'atom_constrainer_ffn_num_layers': 1, 'bond_constrainer_ffn_hidden_dim': [300], 'bond_constrainer_ffn_num_layers': 1, 'weight_column': None, 'target_columns': ['target'], 'mol_target_columns': None, 'atom_target_columns': None, 'bond_target_columns': None, 'ignore_columns': None, 'no_cache': False, 'splits_column': None, 'task_type': 'classification', 'loss_function': None, 'v_kl': 0.0, 'eps': 1e-08, 'alpha': 0.1, 'metrics': ['roc', 'prc', 'accuracy'], 'tracking_metric': 'roc', 'show_individual_scores': True, 'task_weights': None, 'warmup_epochs': 2, 'init_lr': 0.0001, 'max_lr': 0.001, 'final_lr': 0.0001, 'epochs': 50, 'patience': 10, 'min_delta': 0.0, 'grad_clip': None, 'class_balance': False, 'split': 'RANDOM', 'split_sizes': [0.8, 0.1, 0.1], 'split_key_molecule': 0, 'num_replicates': 1, 'num_folds': None, 'save_smiles_splits': False, 'save_data_splits': False, 'splits_file': WindowsPath('data/chemprop_splits_h2h.json'), 'data_seed': 42, 'pytorch_seed': 42}
+2026-09-15T12:33:55 - INFO:chemprop.cli.train - Pulling data from file(s): [WindowsPath('data/chemprop_h2h.csv')]
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] Conflicting single bond directions around double bond at index 1.
+[12:33:55]   BondStereo set to STEREONONE and single bond directions set to NONE.
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+[12:33:55] WARNING: not removing hydrogen atom without neighbors
+2026-09-15T12:33:55 - INFO:chemprop.cli.train - train/val/test split_0 sizes: [1382, 297, 296]
+2026-09-15T12:33:55 - INFO:chemprop.cli.train - 
+    Summary of Training Data    
+┌───────┬──────────────────────┐
+│ Class │ Count/Percent target │
+├───────┼──────────────────────┤
+│   0.0 │              340/25% │
+│   1.0 │             1042/75% │
+│   NaN │                 0/0% │
+│ Total │          1382/100.0% │
+└───────┴──────────────────────┘
+
+2026-09-15T12:33:55 - INFO:chemprop.cli.train - 
+   Summary of Validation Data   
+┌───────┬──────────────────────┐
+│ Class │ Count/Percent target │
+├───────┼──────────────────────┤
+│   0.0 │               74/25% │
+│   1.0 │              223/75% │
+│   NaN │                 0/0% │
+│ Total │           297/100.0% │
+└───────┴──────────────────────┘
+
+2026-09-15T12:33:55 - INFO:chemprop.cli.train - 
+      Summary of Test Data      
+┌───────┬──────────────────────┐
+│ Class │ Count/Percent target │
+├───────┼──────────────────────┤
+│   0.0 │               60/20% │
+│   1.0 │              236/80% │
+│   NaN │                 0/0% │
+│ Total │           296/100.0% │
+└───────┴──────────────────────┘
+
+2026-09-15T12:33:55 - INFO:chemprop.cli.train - Caching training and validation datasets...
+2026-09-15T12:33:57 - INFO:chemprop.cli.train - No loss function was specified! Using class default: <class 'chemprop.nn.metrics.BCELoss'>
+2026-09-15T12:33:57 - INFO:chemprop.cli.train - MPNN(
+  (message_passing): BondMessagePassing(
+    (W_i): Linear(in_features=86, out_features=300, bias=False)
+    (W_h): Linear(in_features=300, out_features=300, bias=False)
+    (W_o): Linear(in_features=372, out_features=300, bias=True)
+    (dropout): Dropout(p=0.0, inplace=False)
+    (tau): ReLU()
+    (V_d_transform): Identity()
+    (graph_transform): GraphTransform(
+      (V_transform): Identity()
+      (E_transform): Identity()
+    )
+  )
+  (agg): NormAggregation()
+  (bn): Identity()
+  (predictor): BinaryClassificationFFN(
+    (ffn): MLP(
+      (0): Sequential(
+        (0): Linear(in_features=300, out_features=200, bias=True)
+      )
+      (1): Sequential(
+        (0): ReLU()
+        (1): Dropout(p=0.0, inplace=False)
+        (2): Linear(in_features=200, out_features=200, bias=True)
+      )
+      (2): Sequential(
+        (0): ReLU()
+        (1): Dropout(p=0.0, inplace=False)
+        (2): Linear(in_features=200, out_features=1, bias=True)
+      )
+    )
+    (criterion): BCELoss(task_weights=[[1.0]])
+    (output_transform): Identity()
+  )
+  (X_d_transform): Identity()
+  (metrics): ModuleList(
+    (0): BinaryAUROC()
+    (1): BinaryAUPRC()
+    (2): BinaryAccuracy()
+    (3): BCELoss(task_weights=[[1.0]])
+  )
+)
+2026-09-15T12:33:57 - WARNING:chemprop.cli.train - Unable to import TensorBoardLogger, reverting to CSVLogger (original error: Neither `tensorboard` nor `tensorboardX` is available. Try `pip install`ing either.
+Requirement 'tensorboardX' not met. HINT: Try running `pip install -U 'tensorboardX'`
+Requirement 'tensorboard' not met. HINT: Try running `pip install -U 'tensorboard'`).
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Loading `train_dataloader` to estimate number of stepping batches.
+C:\Users\vaish\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\lightning\pytorch\utilities\_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+C:\Users\vaish\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:434: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+Wrote config file to results\chemprop_h2h\config.toml
+┌───┬─────────────────┬─────────────────────────┬────────┬───────┬───────┐
+│   │ Name            │ Type                    │ Params │ Mode  │ FLOPs │
+├───┼─────────────────┼─────────────────────────┼────────┼───────┼───────┤
+│ 0 │ message_passing │ BondMessagePassing      │  227 K │ train │     0 │
+│ 1 │ agg             │ NormAggregation         │      0 │ train │     0 │
+│ 2 │ bn              │ Identity                │      0 │ train │     0 │
+│ 3 │ predictor       │ BinaryClassificationFFN │  100 K │ train │     0 │
+│ 4 │ X_d_transform   │ Identity                │      0 │ train │     0 │
+│ 5 │ metrics         │ ModuleList              │      0 │ train │     0 │
+└───┴─────────────────┴─────────────────────────┴────────┴───────┴───────┘
+Trainable params: 328 K                                                        
+Non-trainable params: 0                                                        
+Total params: 328 K                                                            
+Total estimated model params size (MB): 1.313                                  
+Modules in train mode: 29                                                      
+Modules in eval mode: 0                                                        
+Total FLOPs: 0                                                                 
+C:\Users\vaish\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\lightning\pytorch\core\saving.py:398: Skipping 'metrics' parameter because it is not possible to safely dump to YAML.
+C:\Users\vaish\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:434: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+Epoch 34/49 ---------------- 87/87 0:00:03 •        28.08it/s v_num: 0.000     
+                                   0:00:00                    train_loss_step: 
+                                                              0.008 val_loss:  
+                                                              0.644            
+                                                              train_loss_epoch:
+                                                              0.032            
+C:\Users\vaish\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\lightning\pytorch\trainer\connectors\checkpoint_connector.py:149: `.predict(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.predict(ckpt_path='best')` to use the best model or `.predict(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+Restoring states from the checkpoint path at C:\Users\vaish\BBB_project\results\chemprop_h2h\model_0\checkpoints\best-epoch=24-val_roc=0.91.ckpt
+Loaded model weights from the checkpoint at C:\Users\vaish\BBB_project\results\chemprop_h2h\model_0\checkpoints\best-epoch=24-val_roc=0.91.ckpt
+C:\Users\vaish\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:434: The 'predict_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+Predicting -------------------------------- 19/19 0:00:00 • 0:00:00 50.14it/s 
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - Test Set results:
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - test/roc: 0.8668785095214844
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - test/prc: 0.9601250886917114
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - test/accuracy: 0.8581081032752991
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - Entire Test Set individual results:
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - test/target/roc: 0.8668785095214844
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - test/target/prc: 0.9601250886917114
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - test/target/accuracy: 0.8581081032752991
+2026-09-15T12:35:48 - INFO:chemprop.cli.train - Best model saved to 'results\chemprop_h2h\model_0\best.pt'
