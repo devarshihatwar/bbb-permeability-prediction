@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you use these results or code, please cite as below."
+message: "If you use these results, please cite as below."
 authors:
   - family-names: "Hatwar"
     given-names: "Devarshi"
-    orcid: "0009-0003-6639-7709"
-title: "AI-Based Blood-Brain Barrier Permeability Prediction"
+    orcid: "https://orcid.org/0009-0003-6639-7709"
+title: "Comparative Machine Learning and Graph Neural Network Approaches for Blood-Brain Barrier Permeability Prediction"
 type: "software"
 version: "v1.0.0"
 date-released: "2026-09-19"
@@ -15,11 +15,11 @@ identifiers:
     value: "devarshihatwar/bbb-permeability-prediction"
 preferred-citation:
   type: "software"
-  title: "AI-Based Blood-Brain Barrier Permeability Prediction"
+  title: "Comparative Machine Learning and Graph Neural Network Approaches for Blood-Brain Barrier Permeability Prediction"
   author:
     - family-names: "Hatwar"
       given-names: "Devarshi"
-      orcid: "0009-0003-6639-7709"
+      orcid: "https://orcid.org/0009-0003-6639-7709"
   year: 2026
   license: "MIT"
   url: "https://github.com/devarshihatwar/bbb-permeability-prediction"
