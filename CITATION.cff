@@ -10,13 +10,10 @@ version: "v1.0.0"
 date-released: "2026-09-19"
 license: "MIT"
 repository-code: "https://github.com/devarshihatwar/bbb-permeability-prediction"
-identifiers:
-  - type: "github"
-    value: "devarshihatwar/bbb-permeability-prediction"
 preferred-citation:
   type: "software"
   title: "Comparative Machine Learning and Graph Neural Network Approaches for Blood-Brain Barrier Permeability Prediction"
-  author:
+  authors:
     - family-names: "Hatwar"
       given-names: "Devarshi"
       orcid: "https://orcid.org/0009-0003-6639-7709"
